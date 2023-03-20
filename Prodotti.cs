@@ -32,5 +32,17 @@ public class Prodotti
         return ExtendedN;
     }
     
+    public string Padleft()
+    {
+        double input = Convert.ToInt32( Console.ReadLine());
+        string Result = input.ToString("00000000");
+        if(Result == "123445567")
+        {
+            Result = "123445567";
+        }
+        return Result;
+        
+        
+    }
 }
 

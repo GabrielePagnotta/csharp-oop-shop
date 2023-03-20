@@ -23,7 +23,6 @@ Console.WriteLine($"{Aspirapolvere.Fullprice(Aspirapolvere.price, Aspirapolvere.
 
 Prodotti Fotocamera = new Prodotti(47458621, "Fotocamera Canon", "Fotocamera bella", 450, 22);
 
-
 Console.WriteLine("Nome articolo:");
 Console.WriteLine(Fotocamera.name);
 Console.WriteLine("Nome completo articolo");
@@ -38,3 +37,6 @@ Console.WriteLine("Iva in %");
 Console.WriteLine(Fotocamera.tax);
 Console.WriteLine("prezzo totale IVA compresa");
 Console.WriteLine($"{Fotocamera.Fullprice(Fotocamera.price, Fotocamera.tax)} euro");
+
+//Bonus:
+//Console.WriteLine(Aspirapolvere.Padleft());
