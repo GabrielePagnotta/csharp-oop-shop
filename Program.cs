@@ -1,5 +1,9 @@
-﻿//creazione di un istanza
-Prodotti Aspirapolvere = new Prodotti(012548120, "Aspirapolvere", "aspirapolvere da 100W", 59.99, 22);
+﻿Random random1 = new Random();
+int random2 = random1.Next();
+int random3 = random1.Next();
+
+//creazione di un istanza
+Prodotti Aspirapolvere = new Prodotti(random2, "Aspirapolvere", "aspirapolvere da 100W", 59.99, 22);
 
 //Oggetto code è di sola lettura:
 //product.Code = 8257522; //impossibile assegnare un valore ad una propietà perchè è di sola lettura.
@@ -21,7 +25,7 @@ Console.WriteLine("prezzo totale IVA compresa");
 Console.WriteLine($"{Aspirapolvere.Fullprice(Aspirapolvere.price, Aspirapolvere.tax)} euro");
 
 
-Prodotti Fotocamera = new Prodotti(47458621, "Fotocamera Canon", "Fotocamera bella", 450, 22);
+Prodotti Fotocamera = new Prodotti(random3, "Fotocamera Canon", "Fotocamera bella", 450, 22);
 
 Console.WriteLine("Nome articolo:");
 Console.WriteLine(Fotocamera.name);

@@ -2,7 +2,10 @@
 public class Prodotti
 {
     private int code;
-    public int Code { get { return code; } }
+    public int Code { 
+        get { return code; }
+        
+    } 
     public string name;
     public string description;
     public double price;
@@ -16,6 +19,7 @@ public class Prodotti
         this.price = price;
         this.tax = tax;
     }
+
     public double Fullprice(double price, int tax)
     {
          double Pieceofprice = (price * tax) / 100;
