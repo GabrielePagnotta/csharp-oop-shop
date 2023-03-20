@@ -23,6 +23,14 @@ public class Prodotti
         return Math.Round(Fullprice,2);
     }
 
+    public string ExtendedName()
+    {
+        string name = this.name;
+        int code = this.code;
+
+        string ExtendedN = $"{code}  {this.name}";
+        return ExtendedN;
+    }
     
 }
 
